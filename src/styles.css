@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600');
+
+:root {
+	--black: #21252b;
+	--gray: #323844;
+	--red: #e06c75;
+	--green: #98c379;
+	--yellow: #e5c07b;
+	--blue: #61afef;
+	--magenta: #c678dd;
+	--cyan: #56b6c2;
+	--white: #abb2bf;
+}
+
+.red {
+	color: var(--red);
+}
+
+.green {
+	color: var(--green);
+}
+
+.yellow {
+	color: var(--yellow);
+}
+
+.blue {
+	color: var(--blue);
+}
+
+.magenta {
+	color: var(--magenta);
+}
+
+.cyan {
+	color: var(--cyan);
+}
+
+.white {
+	color: var(--white);
+}
+
+html {
+	background: var(--black);
+	color: var(--white);
+	max-width: 100vw;
+	font-size: 1.7rem;
+}
+
+body {
+	margin: 0;
+}
+
+.navigation {
+	font-family: "Inconsolata", monospace;
+	font-weight: 600;
+	font-style: normal;
+	font-optical-sizing: auto;
+	font-variation-settings: "wdth" 100;
+	background: var(--gray);
+}
+
+.navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navigation li {
+	display: flex;
+}
+
+.navigation a {
+	padding: .65rem;
+	text-decoration: none;
+	color: inherit;
+}
+
+.navigation a.current,.navigation a:hover {
+	background: var(--black);
+}
+
+.shell {
+	font-family: "Inconsolata", monospace;
+	font-size: 1rem;
+	font-weight: 600;
+	font-style: normal;
+	font-optical-sizing: auto;
+	font-variation-settings: "wdth" 100;
+	max-width: 100ch !important;
+	display: flex !important;
+	flex-direction: column !important;
+	line-height: 1;
+}
+
+.shell p {
+	margin-top: .65rem !important;
+	margin-bottom: .65rem !important;
+}
+
+.prompt {
+	display: inline-block;
+	font-size: 0;
+}
+
+.prompt span {
+	font-size: 1rem;
+}
+
+.prompt span:last-child {
+	width: max-content;
+	padding-right: .1rem;
+	animation: blink .5s step-end infinite alternate;
+	border-right: .6rem solid var(--white);
+}
+
+.markdown-body {
+	box-sizing: border-box;
+	font-size: .8rem !important;
+	min-width: 50%;
+	max-width: 75%;
+	margin: 0 auto !important;
+	padding: 45px;
+}
+
+.markdown-body.dark {
+	color-scheme: dark;
+	--color-prettylights-syntax-comment: #8b949e;
+	--color-prettylights-syntax-constant: #79c0ff;
+	--color-prettylights-syntax-entity: #d2a8ff;
+	--color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+	--color-prettylights-syntax-entity-tag: #7ee787;
+	--color-prettylights-syntax-keyword: #ff7b72;
+	--color-prettylights-syntax-string: #a5d6ff;
+	--color-prettylights-syntax-variable: #ffa657;
+	--color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+	--color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+	--color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+	--color-prettylights-syntax-carriage-return-text: #f0f6fc;
+	--color-prettylights-syntax-carriage-return-bg: #b62324;
+	--color-prettylights-syntax-string-regexp: #7ee787;
+	--color-prettylights-syntax-markup-list: #f2cc60;
+	--color-prettylights-syntax-markup-heading: #1f6feb;
+	--color-prettylights-syntax-markup-italic: #c9d1d9;
+	--color-prettylights-syntax-markup-bold: #c9d1d9;
+	--color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+	--color-prettylights-syntax-markup-deleted-bg: #67060c;
+	--color-prettylights-syntax-markup-inserted-text: #aff5b4;
+	--color-prettylights-syntax-markup-inserted-bg: #033a16;
+	--color-prettylights-syntax-markup-changed-text: #ffdfb6;
+	--color-prettylights-syntax-markup-changed-bg: #5a1e02;
+	--color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+	--color-prettylights-syntax-markup-ignored-bg: #1158c7;
+	--color-prettylights-syntax-meta-diff-range: #d2a8ff;
+	--color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+	--color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+	--color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+	--color-fg-default: #e6edf3;
+	--color-fg-muted: #848d97;
+	--color-fg-subtle: #6e7681;
+	--color-canvas-default: var(--black) !important;
+	--color-canvas-subtle: var(--gray) !important;
+	--color-border-default: var(--white) !important;
+	--color-border-muted: var(--gray) !important;
+	--color-neutral-muted: rgba(110,118,129,0.4);
+	--color-accent-fg: #2f81f7;
+	--color-accent-emphasis: #1f6feb;
+	--color-success-fg: #3fb950;
+	--color-success-emphasis: #238636;
+	--color-attention-fg: #d29922;
+	--color-attention-emphasis: #9e6a03;
+	--color-attention-subtle: rgba(187,128,9,0.15);
+	--color-danger-fg: #f85149;
+	--color-danger-emphasis: #da3633;
+	--color-done-fg: #a371f7;
+	--color-done-emphasis: #8957e5;
+}
+
+code span.al { color: #ffcfaf; } /* Alert */
+code span.an { color: #7f9f7f; font-weight: bold; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #dca3a3; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #f0dfaf; } /* ControlFlow */
+code span.ch { color: #dca3a3; } /* Char */
+code span.cn { color: #dca3a3; font-weight: bold; } /* Constant */
+code span.co { color: #7f9f7f; } /* Comment */
+code span.cv { color: #7f9f7f; font-weight: bold; } /* CommentVar */
+code span.do { color: #7f9f7f; } /* Documentation */
+code span.dt { color: #dfdfbf; } /* DataType */
+code span.dv { color: #dcdccc; } /* DecVal */
+code span.er { color: #c3bf9f; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #c0bed1; } /* Float */
+code span.fu { color: #efef8f; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #7f9f7f; font-weight: bold; } /* Information */
+code span.kw { color: #f0dfaf; } /* Keyword */
+code span.op { color: #f0efd0; } /* Operator */
+code span.ot { color: #efef8f; } /* Other */
+code span.pp { color: #ffcfaf; font-weight: bold; } /* Preprocessor */
+code span.sc { color: #dca3a3; } /* SpecialChar */
+code span.ss { color: #cc9393; } /* SpecialString */
+code span.st { color: #cc9393; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #cc9393; } /* VerbatimString */
+code span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
+
+@media (max-width: 768px) {
+	.markdown-body {
+		padding: 15px;
+		max-width: 100%;
+	}
+	html {
+		font-size: 1rem;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
