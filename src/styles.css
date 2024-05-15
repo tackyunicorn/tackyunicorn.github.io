@@ -44,7 +44,7 @@ html {
 	background: var(--black);
 	color: var(--white);
 	max-width: 100vw;
-	font-size: 1.7rem;
+	font-size: 1.3rem;
 }
 
 body {
@@ -208,7 +208,7 @@ code span.va { } /* Variable */
 code span.vs { color: #cc9393; } /* VerbatimString */
 code span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.markdown-body {
 		padding: 15px;
 		max-width: 100%;
