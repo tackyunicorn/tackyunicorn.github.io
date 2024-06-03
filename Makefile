@@ -18,5 +18,9 @@ watch:
 	while true; do find src head.html Makefile | entr -d make; done
 
 serve:
-	make watch &
-	npx serve pages
+	@trap 'kill -KILL 0' SIGINT; \
+	make watch & \
+	npx serve pages & \
+	wait
+
+.PHONY: all pages clean watch serve
