@@ -52,3 +52,4 @@ Here are some interesting reads I've come across on [HackerNews](https://news.yc
 - [My Fear of Commitment to the 1st CPU Core](https://www.jabperf.com/my-fear-of-commitment-to-the-1st-cpu-core/) [<sup>HN</sup>](https://news.ycombinator.com/item?id=34769484)
 - [Why Google Stores Billions of Lines of Code in a Single Repository](https://dl.acm.org/doi/pdf/10.1145/2854146) [<sup>HN</sup>](https://news.ycombinator.com/item?id=34766387)
 - [How To Survive Your Project's First 100,000 Lines](https://verdagon.dev/blog/first-100k-lines) [<sup>HN</sup>](https://news.ycombinator.com/item?id=35801302)
+- [Queueing: An interactive study of queueing strategies](https://encore.dev/blog/queueing) [<sup>Theo</sup>](https://youtu.be/b75LBPPzbaA?si=xc5YA7xw0xPSFA3x)
