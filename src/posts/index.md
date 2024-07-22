@@ -1,3 +1,3 @@
 ## Posts
 
-- [3D Frogger](/posts/frogger)
+- [3D Frogger](/posts/frogger/)
