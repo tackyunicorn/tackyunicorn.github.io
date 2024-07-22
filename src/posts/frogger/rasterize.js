@@ -132,6 +132,10 @@ function triggerVibration(time) {
 
 // does stuff when keys are pressed
 function handleKeyDown(event) {
+    const arrowKeys = ['ArrowRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown'];
+    if (arrowKeys.includes(event.code)) {
+        event.preventDefault();
+    }
     
     const modelEnum = {TRIANGLES: "triangles", ELLIPSOID: "ellipsoid"}; // enumerated model type
     const dirEnum = {NEGATIVE: -1, POSITIVE: 1}; // enumerated rotation direction
