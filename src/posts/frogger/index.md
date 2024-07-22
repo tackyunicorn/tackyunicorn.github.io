@@ -40,8 +40,8 @@ Use the arrow keys / buttons to take the frog back home!
     }
 </style>
 
-<script type="text/javascript" src="frogger/gl-matrix.js"></script>
-<script type="text/javascript" src="frogger/rasterize.js"></script>
+<script type="text/javascript" src="gl-matrix.js"></script>
+<script type="text/javascript" src="rasterize.js"></script>
 <script type="text/javascript">
     window.onload = function() {
         main();
