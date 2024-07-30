@@ -13,11 +13,11 @@ My goals with this blog are very simple. I want it to:
 
 For goal 1, I've configured `jjoseph.me` as a custom domain on GitHub [Pages](https://github.com/tackyunicorn/tackyunicorn.github.io). Fingers crossed that Microsoft doesn't pull a [Heroku](https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq) on me! 
 
-To make page loads fast, I'm sticking to static site generation and keeping each page under 14kB. Why 14kB? I'd like to quote from `endtimes.dev`:
+To make page loads fast, I'm sticking to static site generation and keeping each page under 14kB. Why 14kB? I'd like to quote from [`endtimes.dev`](https://endtimes.dev/why-your-website-should-be-under-14kb-in-size/):
 
 > What is surprising is that a 14kB page can load much faster than a 15kB page — maybe 612ms faster — while the difference between a 15kB and a 16kB page is trivial. This is because of the TCP slow start algorithm.
 
-Learn more about this [here](https://endtimes.dev/why-your-website-should-be-under-14kb-in-size/)
+To help me get under 14kB, I'm using [`tdewolff/minify`](https://github.com/tdewolff/minify) to minify all HTML, CSS, and JavaScript files I serve.
 
 Finally, to ease publishing, I've decided to keeps things simple and resort to:
 - Pandoc + GNU Make
@@ -36,11 +36,26 @@ pages: $(patsubst src/%,pages/%,$(shell find src -type f))
 pages/%.md: src/%.md head.html Makefile
 	@mkdir -p $(dir $@)
 	@sed -E 's|(href="/$(word 2, $(subst /, ,$(dir $<)))")|class="current" \1|' head.html > $(basename $@).html
-	pandoc -f gfm -t html $< >> $(basename $@).html
+	@pandoc -f gfm -t html $< >> $(basename $@).html
+	@minify -q -o $(basename $@).html $(basename $@).html
+	@echo $(basename $@).html
+
+pages/%.js: src/%.js Makefile
+	@mkdir -p $(dir $@)
+	@cp $< $@
+	@minify -q -o $@ $@
+	@echo $@
+
+pages/%.css: src/%.css Makefile
+	@mkdir -p $(dir $@)
+	@cp $< $@
+	@minify -q -o $@ $@
+	@echo $@
 
 pages/%: src/%
 	@mkdir -p $(dir $@)
 	@cp $< $@
+	@echo $@
 
 clean:
 	rm -rf pages
