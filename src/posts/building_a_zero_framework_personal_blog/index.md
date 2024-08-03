@@ -35,7 +35,7 @@ pages: $(patsubst src/%,pages/%,$(shell find src -type f))
 
 pages/%.md: src/%.md head.html Makefile
 	@mkdir -p $(dir $@)
-	@sed -E 's|(href="/$(word 2, $(subst /, ,$(dir $<)))")|class="current" \1|' head.html > $(basename $@).html
+	@sed -E 's|(href="/$(word 2, $(subst /, ,$(dir $<)))/?")|class="current" \1|' head.html > $(basename $@).html
 	@pandoc -f gfm -t html $< >> $(basename $@).html
 	@minify -q -o $(basename $@).html $(basename $@).html
 	@echo $(basename $@).html
@@ -82,7 +82,7 @@ would correspond to this route: `jjoseph.me/posts/post1`
 Wonder how I highlight the right tab in the navigation at build time? This `sed` snippet in the `Makefile` helps me do that:
 
 ```Makefile
-@sed -E 's|(href="/$(word 2, $(subst /, ,$(dir $<)))")|class="current" \1|' head.html
+@sed -E 's|(href="/$(word 2, $(subst /, ,$(dir $<)))/?")|class="current" \1|' head.html
 ```
 
 It looks for the root directory the `.md` file is under, and replaces the corresponding navigation link to have the `current` class added to it. So, if it were processing `src/posts/post1/index.md`, it would add the `current` class to the link with `href="/posts"`
