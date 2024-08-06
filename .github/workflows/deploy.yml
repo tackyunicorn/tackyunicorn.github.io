@@ -18,7 +18,9 @@ jobs:
           sudo apt install pandoc minify
 
     - name: Make pages
-      run: make
+      run: |
+          make
+          find pages -type f -name 'index.html' | sed -E 's|^pages|https://jjoseph.me|' > pages/sitemap.txt
 
     - name: Upload pages
       uses: actions/upload-pages-artifact@v3
