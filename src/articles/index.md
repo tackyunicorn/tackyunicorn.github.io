@@ -1,6 +1,6 @@
 ## Articles
 
-Here are some interesting reads I've come across on [HackerNews](https://news.ycombinator.com)
+Here are some interesting reads I've come across the internet.
 
 - [Introducing the Framework Laptop Chromebook Edition](https://frame.work/at/en/blog/introducing-the-framework-laptop-chromebook-edition) [<sup>HN</sup>](https://news.ycombinator.com/item?id=32926369)
 - [Will Serving Real HTML Content Make A Website Faster? Let's Experiment!](https://blog.webpagetest.org/posts/will-html-content-make-site-faster/) [<sup>HN</sup>](https://news.ycombinator.com/item?id=32928298)
@@ -53,3 +53,5 @@ Here are some interesting reads I've come across on [HackerNews](https://news.yc
 - [Why Google Stores Billions of Lines of Code in a Single Repository](https://dl.acm.org/doi/pdf/10.1145/2854146) [<sup>HN</sup>](https://news.ycombinator.com/item?id=34766387)
 - [How To Survive Your Project's First 100,000 Lines](https://verdagon.dev/blog/first-100k-lines) [<sup>HN</sup>](https://news.ycombinator.com/item?id=35801302)
 - [Queueing: An interactive study of queueing strategies](https://encore.dev/blog/queueing) [<sup>Theo</sup>](https://youtu.be/b75LBPPzbaA?si=xc5YA7xw0xPSFA3x)
+- [The two factions of C++](https://herecomesthemoon.net/2024/11/two-factions-of-cpp/) [<sup>HN</sup>](https://news.ycombinator.com/item?id=42231489)
+- [Show HN: If YouTube had actual channels](https://ytch.xyz/) [<sup>HN</sup>](https://news.ycombinator.com/item?id=41247023)

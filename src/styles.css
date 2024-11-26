@@ -37,6 +37,10 @@ body {
 	margin: 0;
 }
 
+p {
+	text-align: justify;
+}
+
 .navigation {
 	font-family: "Inconsolata", monospace;
 	background: var(--gray);
