@@ -8,12 +8,12 @@ I'd never seen Vim used like that. It was like watching an expert pianist play t
 
 Seeing Mitomo-san use Vim lit up a deep desire in me. I wanted to edit text at the _speed of thought_. For a hunt-and-peck typer like me, this would mean months of effort learning to touch type and building a muscle memory around Vim motions.
 
-<p style="margin-bottom: 2px" align="center">
+<div style="margin-bottom: 2px" align="center">
 <img loading="lazy" style="width: 70%" src="images/monstarlab.webp" alt="A Monstarlab team photo">
-</p>
-<p style="font-size: .7rem" align="center">
+</div>
+<div style="font-size: .7rem" align="center">
 <em>Mitomo-san (second from right) and me (third from left)</em>
-</p>
+</div>
 
 ## Enter ThePrimeagen
 
@@ -39,12 +39,12 @@ By mid 2022, I switched to [Neovim](https://neovim.io), a modern fork of Vim. It
 
 There was one thing I felt missing though. ThePrimeagen would stream with his split, ortholinear [Kinesis](https://kinesis-ergo.com/shop/advantage2) keyboard, and I wanted the same experience. So, I went ahead and bought the [ZSA Moonlander](https://www.zsa.io/moonlander). This was a great decision as the split layout helped me gain better posture and ergonomics. The Moonlander runs on the [QMK Firmware](https://qmk.fm), so I was also able to setup layers that remapped `h, j, k, l` to the arrow keys. This way, I could use Vim motions across the computer!
 
-<p style="margin-bottom: 2px" align="center">
+<div style="margin-bottom: 2px" align="center">
 <img loading="lazy" style="width: 70%" src="images/zsa_moonlander.webp" alt="The ZSA Moonlander on my desk">
-</p>
-<p style="font-size: .7rem" align="center">
+</div>
+<div style="margin-bottom: 2px; font-size: .7rem" align="center">
 <em>The ZSA Moonlander on my desk</em>
-</p>
+</div>
 
 It's hard to overstate the impact a skill has on your productivity. Over the years, I picture all the hours saved just by typing fast and using Vim. In the words of ThePrimeagen, I can finally say:
 
