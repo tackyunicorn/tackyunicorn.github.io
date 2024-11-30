@@ -55,3 +55,4 @@ Here are some interesting reads I've come across the internet.
 - [Queueing: An interactive study of queueing strategies](https://encore.dev/blog/queueing) [<sup>Theo</sup>](https://youtu.be/b75LBPPzbaA?si=xc5YA7xw0xPSFA3x)
 - [The two factions of C++](https://herecomesthemoon.net/2024/11/two-factions-of-cpp/) [<sup>HN</sup>](https://news.ycombinator.com/item?id=42231489)
 - [Show HN: If YouTube had actual channels](https://ytch.xyz/) [<sup>HN</sup>](https://news.ycombinator.com/item?id=41247023)
+- [C++, Complexity, and Compiler Bugs](https://azeemba.com/posts/cpp-complexity-compiler-bugs.html) [<sup>HN</sup>](https://news.ycombinator.com/item?id=42281256)
